@@ -1,0 +1,12 @@
+<!--index.html-->
+{% extends 'base.html' %}
+{% block content %}
+<div class="center">
+    <h1>Кликер!</h1>
+    <p class="fs-4">Количество кликов: {{ current_user.clicks }}</p>
+
+    <a class="btn-game" href="{{ url_for('click') }}">Клик!</a>
+</div>
+{% endblock %}
+
+
