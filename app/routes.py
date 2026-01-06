@@ -56,3 +56,11 @@ def click():
     db.session.commit()
     return redirect(url_for('index'))
 
+@app.route('/stats')
+@login_required
+def stats():
+    users = User.query.order_by(User.clicks.desc()).all()
+    total_clicks = sum(u.clicks for u in users)
+    return render_template('stats.html', users=users, total_clicks=total_clicks)
+
+

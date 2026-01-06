@@ -145,3 +145,82 @@ input[type="password"]:focus {
 }
 
 
+/* ================================
+   ЦВЕТОВАЯ ТЕМА — МЯГКИЙ КОРИЧНЕВЫЙ
+================================ */
+
+/* Фон страницы */
+body {
+    background: linear-gradient(135deg, #F5F1EB, #EDE7DD);
+    color: #2B2B2B;
+}
+
+/* Навбар */
+nav {
+    background: #8B6F47 !important;
+}
+
+nav a {
+    color: #ffffff !important;
+}
+
+nav a:hover {
+    color: #F5F1EB !important;
+    opacity: 1;
+}
+
+/* Футер */
+footer {
+    background: #8B6F47 !important;
+    color: #ffffff !important;
+}
+
+footer a {
+    color: #ffffff !important;
+}
+
+footer a:hover {
+    color: #F5F1EB !important;
+}
+
+/* Кнопки */
+.btn-game {
+    background: linear-gradient(180deg, #C9A66B, #B8925E);
+    border: 2px solid #8B6F47;
+    box-shadow: 0 4px 0 #6E5634;
+}
+
+.btn-game:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #6E5634;
+}
+
+.btn-game:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #6E5634;
+}
+
+/* Поля ввода */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #8B6F47;
+}
+
+/* Карточки */
+.card-custom {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-left: 5px solid #C9A66B;
+    animation: fadeIn 0.6s ease;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+
+

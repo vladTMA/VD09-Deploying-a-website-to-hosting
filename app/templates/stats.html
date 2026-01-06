@@ -1,0 +1,28 @@
+<!--stats.html-->
+{% extends 'base.html' %}
+{% block title %}Статистика{% endblock %}
+
+{% block content %}
+<div class="card-custom">
+    <h2 class="mb-3">Статистика пользователей</h2>
+
+    <p><strong>Всего кликов:</strong> {{ total_clicks }}</p>
+
+    <table class="table table-striped mt-3">
+        <thead>
+            <tr>
+                <th>Пользователь</th>
+                <th>Клики</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for u in users %}
+            <tr>
+                <td>{{ u.username }}</td>
+                <td>{{ u.clicks }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
